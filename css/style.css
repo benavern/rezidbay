@@ -1,0 +1,354 @@
+/*============================================
+*
+*	Stylesheet RezidBay by ZeZeN
+*	bencrdc@gmail.com
+*	http://benjamin-caradeuc.tk
+*
+=============================================*/
+
+
+
+
+/*============================================
+*
+*	RESET + INIT
+*
+=============================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato|Rokkitt|Cantarell);
+/*
+* Cantarell	pour le texte / tt le site en mode sans serif
+* Lato 		pour grandes polices sur surfaces unies en mode sans serif
+* Rokkit	font sympa en mode serif
+*/
+
+*{
+	margin:0;
+	padding:0;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Cantarell', sans-serif;
+}
+
+
+
+
+
+
+/*============================================
+*
+*	Banniere + HEADER
+*
+=============================================*/
+/*-------banniere-----------*/
+#banniere{
+	position:relative;
+	width:100%;
+	font-family: 'Lato', sans-serif;
+	color:#ecf0f1;
+	/*background-color: #27ae60;*/
+	background-color: black;
+	height:500px;
+
+	overflow: hidden;
+}
+
+#banniere #banniere_title{
+	position:absolute;
+	top:20%;
+	left:10%;
+	right:10%;
+	font-size: 5em;
+}
+
+#banniere #banniere_title #banniere_text{
+	font-size: 0.5em;
+}
+
+#bg_banniere{
+	position:absolute;
+	left:0;
+	right:0;
+	display:block;
+	width:100%;
+	height:100%;
+	/*background: url("http://www.tech-brest-iroise.fr/files/2194/residence_etudiants.jpg") 100% fixed;*/
+	background: url("../images/rezid.jpg") 100% fixed;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	background-size: cover;
+}
+
+/*--------header------------*/
+header{
+	position:relative;
+	width: 100%;
+	background-color: #34495e;	
+	font-family: 'Lato', sans-serif;
+}
+
+.menu-fix{
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+header #header-container{
+	width:80%;
+	padding:20px 0;
+	min-width: 800px;
+	margin:0 auto;
+}
+
+/*-------LOGO-----------------*/
+header #header-container #logo{
+	display:inline-block;
+	max-width: 300px;
+	height:50px;
+}
+
+header #header-container #logo img{
+	max-height:50px;
+	vertical-align: middle;
+}
+
+header #header-container .lien-logo{
+	color:#ecf0f1;
+	text-decoration: none;
+	font-size: 2em;	
+}
+
+
+/*-------MENU-----------------*/
+header #header-container #menu{
+	display:inline-block;
+	float:right;
+	text-align:right;
+	/*max-width:500px;*/
+
+}
+header #header-container #menu li{
+	display:inline;
+	margin-left: 15px;
+	
+}
+header #header-container #menu li a, header #header-container #menu li a:visited{
+	color:#aaa;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding:10px 5px;
+}
+
+header #header-container #menu li a:hover{
+	color:#eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================================
+*
+*	CONTAINER
+*
+=============================================*/
+
+#container{
+	background-color: #ecf0f1;
+	padding:20px 10%;
+}
+
+
+#container .article{
+	margin:20px 0;
+	padding:20px;
+	background-color: white;
+}
+
+#container .article .avatar{
+	max-width: 60px;
+}
+
+#container .article h2{
+	display:inline;
+}
+#container .article p{
+	text-align: justify;
+}
+
+#container .article .lien-article,#container .article  h2{
+	color:#3498db;
+	text-decoration: none;
+}
+
+#container .article .toggle-photos{
+	display:inline-block;
+	padding:10px 20px;
+	margin:10px 30px;
+	background-color: #9b59b6;
+	border-radius: 3px;
+	color:#ecf0f1;
+	text-decoration: none;
+}
+
+#container .article .toggle-photos:hover{
+	background-color: #8e44ad ;
+}
+
+#container .article #photos{
+	width:60%;
+	margin:20px auto;
+	padding:20px;
+	background-color: #95a5a6;
+}
+#container .article #photos img{
+	display:block;
+	margin:10px auto;
+	max-width:100%;
+}
+
+
+
+
+#container .retour{
+	display:inline-block;
+	padding:10px 20px;
+	margin:10px 30px;
+	background-color: #e74c3c;
+	border-radius: 3px;
+	color:#ecf0f1;
+	text-decoration: none;
+}
+
+#container .retour:hover{
+	background-color: #c0392b;
+}
+
+
+
+/*------infos-------*/
+.infos{
+	font-size: 1.5em;
+}
+
+
+
+
+
+
+
+/*============================================
+*
+*	footer
+*
+=============================================*/
+
+footer{
+	background-color: #2c3e50;
+	width:100%;
+	color:#bdc3c7;
+	text-align:center;
+}
+
+
+
+/*============================================
+*
+*	petits réglages supplémentaires
+*
+=============================================*/
+
+.mobile{
+	display:none;
+}
+
+
+#switch_menu{
+	width:50px;
+	position:fixed;
+	right:10px;
+	bottom:20px;
+}
+
+
+/*============================================
+*
+*	Affichage mobile / ecran moins large que 800px
+*
+=============================================*/
+
+@media screen and (max-width: 800px) {
+
+	.mobile{
+		display:block;
+	}
+
+	.pc{
+		display:none;
+		opacity:0;
+	}
+
+
+	header #header-container{
+		min-width:initial;
+	}
+
+	#banniere #banniere_title{
+		font-size: 3em;
+	}
+
+	header #header-container #menu{
+		display:none;
+	}
+
+	#menu_portable{
+		position:fixed;
+		bottom:80px;
+		right:10px;
+		max-height:70%;
+		width:90%;
+		background-color:#2c3e50;
+		border-radius:5px;
+		padding:10px;
+		color:#ecf0f1;
+		font-size: 2em;
+		overflow: auto;
+		text-align:center;
+	}
+
+	#menu_portable li{
+		list-style: none;
+	}
+	#menu_portable a{
+		text-decoration: none;
+	}
+
+	
+	#container{
+		padding:10px 0;
+	}
+	#container .article{
+		margin:10px 0;
+		padding:12px;
+	}
+
+	#container .article #photos{
+		width:100%;
+	}
+
+}
